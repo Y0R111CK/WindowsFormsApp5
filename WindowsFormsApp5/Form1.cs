@@ -20,12 +20,12 @@ namespace WindowsFormsApp5
         {
                 TextBox btn = new TextBox();
                 btn.Parent = this;
-                btn.Location = new Point(10, 100);
+                btn.Location = new Point(e.X, e.Y);
         }
         private void panel1_MouseClick(object sender, MouseEventArgs e)
         {
             Button btn = new Button();
-            btn.Location = new Point(100, 10);
+            btn.Location = new Point(e.X, e.Y);
             panel1.Controls.Add(btn);
         }
     }
